@@ -19,27 +19,16 @@ int main(){
     cout << " Product is " << n[0] * n[1] * n[2] << endl;
 
     largest = n[0];
-    smallest = n[0];
     for(int k=0; k<3; k++){
-        if ( largest > n[k] )
+        if ( largest < n[k] )
             largest = n[k];
         }
-        
-/*    if ( n1 > n2 ){
-        largest = n1;}
-    else if ( n2 > n1 ){
-        largest = n2;}
-    else if ( n3 > largest ){
-        largest = n3;}
+    smallest = n[0];  
+    for(int k=0; k<3; k++){
+        if ( n[k] < smallest )
+            smallest = n[k];
+            }
 
-
-    if ( n1 < n2 ){
-        smallest = n1;}
-    else if ( n2 < n1 ){
-        smallest = n2;}
-    else if ( n3 < smallest ){
-        smallest = n3;}
-*/
     cout << " Smallest is " << smallest << endl;
     cout << " Largest is " << largest << endl;
 
