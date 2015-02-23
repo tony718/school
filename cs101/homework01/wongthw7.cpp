@@ -8,43 +8,31 @@
 using namespace std;
 int main(){
 
-    int n1, n2, n3 ,n4 ,n5;
-    int largest=0, smallest=0;
+    int n[5] = { 1 ,2, 3, 4, 5 };
+    int largest, smallest;
 
     cout << " Please enter 5 intergers so we can determine " << endl;
     cout << " which is the largest and smallest. \n\n" << endl;
     cout << " Enter five integers: ";
-    cin >> n1 >> n2 >> n3 >> n4 >> n5;
+    cin >> n[0] >> n[1] >> n[2] >> n[3] >> n[4];
 
-    if ( n1 > largest){
-        largest = n1;}
-    if ( n2 > largest ){
-        largest = n2;}
-    if ( n3 > largest ){
-        largest = n3;}
-    if ( n4 > largest ){
-        largest = n4;}
-    if ( n5 > largest ){
-        largest = n5;}
+    largest = n[0];
+    for(int i=0;i<5;i++){
+        if( n[i] > largest )
+            largest = n[i];
+    }
 
-    if ( n1 < smallest ){
-        smallest = n1;}
-    if ( n2 < smallest ){
-        smallest = n2;}
-    if ( n3 < smallest ){
-        smallest = n3;}
-    if ( n4 < smallest ){
-        smallest = n4;}
-    if ( n5 < smallest ){
-        smallest = n5;}
+    smallest = n[0];
+    for(int i=0;i<5;i++){
+        if ( n[i] < smallest ){
+            smallest = n[i];}
+    }
 
     cout << " The smallest is " << smallest << "." << endl;
     cout << " the largest is "<< largest << "." << endl;
 
     return 0;
 
-
-
-
 }
+
 
