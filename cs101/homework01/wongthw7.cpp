@@ -1,7 +1,12 @@
 /* Name Tsz Wong
    CS 101 - Spring 2014
    Homework 1.7
-   */
+
+   Write a program that reads five integers and determines
+   and prints the largest and the smallest integers in the group.
+
+
+*/
 
 
 #include <iostream>
