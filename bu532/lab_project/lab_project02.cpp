@@ -1,3 +1,8 @@
+/* Name: Tony Wong
+ * Lab project 2
+ * interest minimum balance calculator
+ */
+
 #include <iostream>
 using namespace std;
 
@@ -55,10 +60,5 @@ int main(){
         cout << endl << endl;
     }while (exit =='y');
 
-
-
-
-
-
-
-    return 0;}
+    return 0;
+}
