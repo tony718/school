@@ -1,3 +1,8 @@
+/* Name: Tony Wong
+ * Lab project #1
+ * Madlib assignment with special conditions.
+ */
+
 #include <iostream>
 using namespace std;
 int main(){
