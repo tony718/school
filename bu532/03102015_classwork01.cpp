@@ -1,3 +1,8 @@
+/* Name: Tony Tsz Wong
+ * March 10 2015
+ * Function passing values
+ */
+
 #include <iostream>
 using namespace std;
 
@@ -15,21 +20,24 @@ int NumBox (int NumTiles, int NuBoxSize);
 int main(){
 
     int tiles = 0;
+    int boxsize = 0;
+    cout << " Enter amount of tiles that can be fit per box : ";
+    cin >> boxsize;
     tiles = NumTiles(10.0,10.0);
     cout << " Number of tiles are : " << tiles << endl;
-    cout << " Number of boxes required is " << NumBox(tiles,4) << endl;    
+    cout << " Number of boxes required is " << NumBox(tiles,boxsize) << endl;    
     tiles = NumTiles(10.0,10.0,1,1);
     cout << " Number of tiles are : " << tiles << endl;
-    cout << " Number of boxes required is " << NumBox(tiles,4) << endl;    
+    cout << " Number of boxes required is " << NumBox(tiles,boxsize) << endl;    
     tiles = NumTiles(10.0,10.0,2,2);
     cout << " Number of tiles are : " << tiles << endl;
-    cout << " Number of boxes required is " << NumBox(tiles,4) << endl;    
+    cout << " Number of boxes required is " << NumBox(tiles,boxsize) << endl;    
     tiles = NumTiles(10.0,10.0,.25,.25);
     cout << " Number of tiles are : " << tiles << endl;
-    cout << " Number of boxes required is " << NumBox(tiles,4) << endl;
+    cout << " Number of boxes required is " << NumBox(tiles,boxsize) << endl;
     tiles = NumTiles(10.0,10.0,9,4);
     cout << " Number of tiles are : " << tiles << endl;
-    cout << " Number of boxes required is " << NumBox(tiles,4) << endl;
+    cout << " Number of boxes required is " << NumBox(tiles,boxsize) << endl;
 
 
     return 0;
