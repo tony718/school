@@ -1,4 +1,7 @@
 /*
+Name: Tony Tsz Wong
+Homework 3.6
+
 
 Write a program that reads an integer and prints its digits. For instance, if the user
 enters -341670, the program should print the following lines:

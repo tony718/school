@@ -1,3 +1,9 @@
+/*
+Name: Tony Tsz Wong
+Homework 3.1
+
+*/
+
 #include <iostream>
 #include <cmath>
 using std::cin;
@@ -6,7 +12,7 @@ using std::endl;
 
 int main(){
 
-    double sum, n, k = 1;
+    double sum, n;
     double sign;
 
     cout << " Please enter \"n\" value for the following series: \n"

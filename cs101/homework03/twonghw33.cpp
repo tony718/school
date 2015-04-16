@@ -1,3 +1,9 @@
+/*
+Name: Tony Tsz Wong
+Homework 3.3
+
+*/
+
 #include <iostream>
 #include <cmath>
 
@@ -9,30 +15,21 @@ int main(){
    int n;
 
 
-cout << " Enter numeric value for n : ";
-cin >> n;
-cout << " Enter numeric value for x : ";
-cin >> x;
+	cout << " Enter numeric value for n : ";
+	cin >> n;
+	cout << " Enter numeric value for x : ";
+	cin >> x;
 
     for(int counter = 1; counter<=n ; counter++ ){
         zeta += pow(counter,x);
-        cout << zeta <<endl;
         }
-   cout << " zeta(" <<  n << "," << x 
-        << ") = "<< static_cast<double>(1/zeta) << endl;
-    
-    
-    
-    
-    
-    
-    
-    
-    
+		
+	cout << " zeta(" <<  n << "," << x 
+         << ") = "<< static_cast<double>(1/zeta) << endl;
     
     
     return 0;
-    }
+}
 
 
 
