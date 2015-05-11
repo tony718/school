@@ -40,6 +40,7 @@ int main (){
 }
 
 CounterType::CounterType() : count(0)
+
 {
    //Body intentionally empty
    //Creates the counter to 0
