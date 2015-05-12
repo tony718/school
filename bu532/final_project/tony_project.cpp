@@ -20,6 +20,6 @@ int main(){
 		cout << namedb[i][1] << "\t" << namedb[i][2] << endl;
 			 }
 
-	namedb[0][3][2]="hello";
-	cout << namedb[3][2][2] << endl;
+	namedb[3][3]="hello";
+	cout << namedb[3][3] << endl;
 }
