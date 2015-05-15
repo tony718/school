@@ -1,25 +1,20 @@
 #include<iostream>
-#include<vector>
 #include <fstream>
-#include <string>
-#include <sstream>
 using namespace std;
 
 int main(){
 	
-	vector<vector <string> > namedb(10,vector<string>(10));
+	ifstream RecSides;
+	RecSides.open("data.txt");
 
-	cout << "current size of namedb = " << namedb.size() << endl;
-		
-	for( unsigned int i=0 ; i < 10 ; i++){
-		namedb[i][1] = "Lebron";
-		namedb[i][2] = "James";
+	double RecData[10][2];
+	
+	int i;
+	for (i = 0 ; i < 10 ; i++)
+		RecSides >> RecData[i][1] >> RecData[i][2];
+	
 
-}
-	for( unsigned int i=0 ; i < 10 ; i++){
-		cout << namedb[i][1] << "\t" << namedb[i][2] << endl;
-			 }
-
-	namedb[3][3]="hello";
-	cout << namedb[3][3] << endl;
+	for( int j = 0 ; j < i ; j++){
+		cout << RecData[j][1] << " " << RecData[j][2] << endl;
+	}
 }
